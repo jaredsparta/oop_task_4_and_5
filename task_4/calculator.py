@@ -37,5 +37,11 @@ class Calculator:
         return 0.5 * side1 * side2 * sin(angle*pi/180)
 
 
+    def inch_to_cm(self, inches):
+        return inches * 2.54
+
+    def cm_to_inch(self, cm):
+        return cm / 2.54
+
 cal = Calculator()
 print(cal.triangle_area_trig(5,6,90))
