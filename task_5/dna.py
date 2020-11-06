@@ -1,7 +1,11 @@
 class DNA:
+    # When the class is called, the function user is also called
     def __init__(self):
         self.user()
 
+    # Initiates a counter for each possible string value
+    # This function then iterates over a string and returns the
+    # counts in a tuple
     def count(self, dna_string):
         A_count = 0
         C_count = 0
@@ -24,7 +28,8 @@ class DNA:
 
         return (A_count, C_count, T_count, G_count)
 
-
+    # Allows the user to test different DNA strands
+    # Returns the count of each one in a user-friendly way
     def user(self):
         while True:
             dna = input("""\nPlease input a DNA sequence or X to stop:
@@ -35,4 +40,5 @@ class DNA:
             print("\nResults:")
             print(f"A : {tuple[0]}, C : {tuple[1]}, T : {tuple[2]}, G : {tuple[3]}")
 
+# Calls the program
 DNA()          
