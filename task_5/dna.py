@@ -41,4 +41,5 @@ class DNA:
             print(f"A : {tuple[0]}, C : {tuple[1]}, T : {tuple[2]}, G : {tuple[3]}")
 
 # Calls the program
-DNA()          
+DNA()
+     
